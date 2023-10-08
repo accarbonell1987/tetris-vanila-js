@@ -1,2 +1,2 @@
-# tetris-vanila-js
+# tetris-vanilla-js
 tetris vanilla js
