@@ -1,8 +1,7 @@
-import { useState } from "react";
-
 import "./App.css";
 
 import { Image, User, Link, Button } from "@nextui-org/react";
+import { Player, Score, Game } from "..";
 
 const App = () => {
 	return (
@@ -26,11 +25,15 @@ const App = () => {
 				</div>
 			</div>
 			<div className="flex flex-row gap-1 grow pt-3">
-				<article className="flex-none border-1 border-white">Left</article>
-				<article className="flex justify-center grow w-14 border-1 border-white">
-					<canvas width="320" height="640" id="game"></canvas>
+				<article className="flex border-1 border-white w-64">
+					<Score />
 				</article>
-				<article className="flex-none border-1 border-white">Right</article>
+				<article className="flex justify-center grow w-14 border-1 border-white">
+					<Game />
+				</article>
+				<article className="flex border-1 border-white w-64">
+					<Player />
+				</article>
 			</div>
 		</main>
 	);
